@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🥪 My One Day
 
-## Available Scripts
+원데이 클래스 웹 사이트
 
-In the project directory, you can run:
+# 🥐 프로젝트 소개
 
-### `npm start`
+React를 사용한 원데이 클래스 취미 웹사이트 토이 프로젝트입니다
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 🧭 개발 기간
+23.03.15 ~ 23.03.24
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 🖥 사용 기술
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"> <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white">
 
-### `npm test`
+# 📌기능 설명
+- ✅ 원데이 클래스의 간단한 이미지, 정보 확인
+- ✅ 최근 본 상품 구현
+- ✅ React-slick를 사용한 후기 슬라이드
+- ✅ 상세 페이지 및 redux를 이용한 장바구니 구현
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 🥯 구현 이미지
+### 1️⃣Main
+#### My One Day 웹사이트의 메인 페이지입니다
+![원데이클래스 메인](https://user-images.githubusercontent.com/88229797/227766892-799eb8cc-03ca-46ac-af2d-d5d47fa9528c.png)
+- Data.js에 데이터를 넣어 원데이 클래스들에 대한 간단한 이미지, 정보들을 확인 할 수 있도록 구현
+- React-slick 슬라이드를 사용하여 간단한 후기 정보를 출력함
+- localStorage를 사용하여 최근 본 상품을 최대 3개까지 출력가능하며 Navigate를 사용하여 해당이미지 클릭시 상세 페이지로 이동 할 수 있도록 구현
 
-### `npm run build`
+### 2️⃣Detail
+#### 선택한 클래스의 상세 페이지입니다
+![원데이클래스 상세](https://user-images.githubusercontent.com/88229797/227767091-564504bb-15d4-4de3-85ad-e8efa9ae7bec.png)
+- 메인페이지에서 이미지를 클릭하면 상세페이지로 이동가능
+- 날짜와 인원을 선택 할 수 있고 인원이 늘어나면 최종 예약금액도 같이 증가하게 됨
+- 장바구니 담기 버튼을 누르면 장바구니 페이지에 해당 정보들이 저장됨
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3️⃣Cart
+#### 장바구니 페이지입니다
+![원데이클래스 장바구니](https://user-images.githubusercontent.com/88229797/227767094-60ece370-894b-4746-b2ca-051666b371cb.png)
+- 장바구니 페이지에서는 디테일 페이지에서 설정한 날짜와 인원의 값을 받아와서 표현함
+- 리스트에 넣은 항목들의 최종 금액을 확인 가능함
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
