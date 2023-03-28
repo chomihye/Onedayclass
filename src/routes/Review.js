@@ -8,7 +8,8 @@ import 'slick-carousel/slick/slick-theme.css';
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  autoplay : true,
+  speed: 300,
   slidesToShow: 4,
   slidesToScroll: 2,
   initialSlide: 0,

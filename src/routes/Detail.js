@@ -12,7 +12,7 @@ function Detail() {
   let [person, setPerson] = useState('1');
   let [totalPrice, setTotalPrice] = useState(0);
   let dispatch = useDispatch();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTotalPrice(person * classdata.price);
@@ -69,7 +69,7 @@ function Detail() {
               <div className='pick_member'>인원선택</div>
               <Form.Control
                 type='number'
-                min='0'
+                min='1'
                 value={person}
                 onChange={handlePersonChange}
                 className='member'
@@ -84,7 +84,10 @@ function Detail() {
                 </div>
               </div>
             </div>
-            <Link
+            <Button
+              variant='primary'
+              size='lg'
+              className='cart_btn'
               onClick={() => {
                 dispatch(
                   addItem({ id: classdata.id, date: date, person: person })
@@ -92,10 +95,8 @@ function Detail() {
                 navigate('/Cart');
               }}
             >
-              <Button variant='primary' size='lg' className='cart_btn'>
-                장바구니 담기
-              </Button>
-            </Link>
+              장바구니 담기
+            </Button>
           </div>
         </div>
         <Tabs defaultActiveKey='home' id='noanim-tab-example' className='mb-3'>

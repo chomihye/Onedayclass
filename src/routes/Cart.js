@@ -1,16 +1,35 @@
 import { useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import { data1 } from '../data.js';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Cart() {
   let state = useSelector((state) => {
     return state;
   });
   let [classdata, setClassdata] = useState({});
-  
-  
- 
+
+
+  if (state.cart.length === 0) {
+    return (
+      <div className='cart_container'>
+        <div className='empty_cart'>
+          장바구니가 비었습니다🤔
+          <Link to='/'>
+            <Button
+              className='find_btn'
+              variant='outline-success'
+              size='lg'
+              style={{ width: '500px' }}
+            >
+              클래스 둘러보러가기
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -35,9 +54,10 @@ function Cart() {
             </div>
           ))}
         </div>
+
         <hr />
         <div className='reserve_final_price'>
-          최종 금액 : 
+          최종 금액 :
           {state.cart.reduce(
             (a, c) => a + data1.find((d) => d.id === c.id).price * c.person,
             0

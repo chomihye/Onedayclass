@@ -9,7 +9,7 @@ import Review from './Review';
 function Home() {
   let [classdata, setClassdata] = useState(data);
   let [recentData, setRecentData] = useState([]);
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let arr = localStorage.getItem('recentItem');
